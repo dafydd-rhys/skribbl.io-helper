@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Skribbl-Helper!</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Skribbl-Helper!</h1>
+        <div class="instructions">
+          <div class="input-section">
+            <label for="lettersInput">Enter your letters:</label>
+            <input type="text" id="lettersInput" value="___" />
+            <label for="lengthDropdown">Word Length:</label>
+            <select id="lengthDropdown"></select>
+            <button id="findWordsButton">Find Words</button>
+          </div>
+
+          <div id="results">
+            <h3>Suggestions:</h3>
+            <ul id="wordList" class="grid"></ul>
+            <div id="pagination" class="pagination">
+              <button id="prevPage" disabled>Previous</button>
+              <button id="nextPage" disabled>Next</button>
+            </div>
+          </div>
+
+          <h2>Using this project</h2>
+          <p>
+            This website allows you to help uncover skribbl words, simply enter
+            the <strong>word count</strong> and <strong>discovered letters</strong>
+            from the word in their correct position and look at the results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
